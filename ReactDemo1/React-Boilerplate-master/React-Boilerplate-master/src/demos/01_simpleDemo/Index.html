@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src = "../../js/react.min.js"></script>
+  <script src="../../js/react-dom.min.js"></script>
+  <script src="../../js/browser.min.js"></script>
+
+</head>
+<body>
+  
+    <div id="example"></div>
+
+  <script type="text/babel">
+
+     var Comp1 = React.createClass({
+
+       render: function () {
+         return (<h2>{this.props.message}</h2>);
+         }
+   });
+
+    ReactDOM.render(
+      <div>  
+       <Comp1 message = "My Parameter"/>
+       <Comp1 message = "Working"/>
+       <Comp1 message = "Correctly"/>
+       <Comp1 message = "!!!!!!!"/>
+      </div>
+      ,document.getElementById('example'));
+  </script>
+
+</body>
+</html>
